@@ -27,28 +27,37 @@ GocalAI is a premium, modern, and highly interactive web application designed to
 
 ---
 
+## 📱 Ecosystem Architecture
+
+GocalAI consists of the following integrated systems:
+1. **[Web Showcase Platform](https://github.com/masumhasan/ramsai_web)** (this repository): Beautiful landing page, pricing guide, and interactive scanner demo.
+2. **[Flutter Mobile App](https://github.com/masumhasan/ramsai)**: The native cross-platform companion mobile app for Android and iOS providing direct camera barcode/label scanning and user journals.
+3. **[Node.js Backend](https://github.com/masumhasan/ramsai_backend)**: Node/Express TypeScript server powered by MongoDB, OpenAI GPT-4o, and Open Food Facts API for nutrition analyses.
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-Make sure you have **Node.js** (v18+) and **pnpm** installed on your system.
+Make sure you have **Node.js** (v18+) and **npm** installed on your system.
 
 ### Installation
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/nurulla-hasan/ramsai_website.git
-   cd ramsai_website
+   git clone https://github.com/masumhasan/ramsai_web.git
+   cd ramsai_web
    ```
 
 2. **Install dependencies:**
    ```bash
-   pnpm install
+   npm install
    ```
 
 3. **Start the local development server:**
    ```bash
-   pnpm dev
+   npm run dev
    ```
    Open your browser and navigate to `http://localhost:5173`.
 
@@ -56,7 +65,7 @@ Make sure you have **Node.js** (v18+) and **pnpm** installed on your system.
 
 To compile TypeScript and build the production bundle:
 ```bash
-pnpm build
+npm run build
 ```
 This output is saved to the `/dist` directory, fully optimized and ready to deploy to Vercel, Netlify, or any static hosting platform.
 
