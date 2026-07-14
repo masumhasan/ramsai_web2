@@ -50,6 +50,21 @@
   --radius-2xl: calc(var(--radius) * 1.8);
   --radius-3xl: calc(var(--radius) * 2.2);
   --radius-4xl: calc(var(--radius) * 2.6);
+  --color-surface-raised: #1E1E1E;
+  --color-dark-card: #1A1A1A;
+  --color-brand-hover: #1a5de0;
+  --color-accent-blue: #60A5FA;
+  --color-accent-green: #00C853;
+  --color-accent-purple: #A78BFA;
+  --color-accent-orange: #FB923C;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: rgba(255, 255, 255, 0.5);
+  --color-text-muted: #4A5565;
+  --color-title-soft: #D7DFEF;
+  --color-border-soft: rgba(255, 255, 255, 0.1);
+  --color-input-border: #2E333C;
+  --color-overlay-soft: rgba(255, 255, 255, 0.05);
+  --color-brand: #2E6FFC;
 }
 
 :root {

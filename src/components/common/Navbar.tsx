@@ -57,10 +57,12 @@ const Navbar = () => {
                 {/* Dashboard Button (Desktop) & Hamburger */}
                 <div className="flex items-center gap-4">
                     <div className="hidden md:block">
-                        <Button size="lg">
-                            Dashboard
-                            <ArrowRight className="w-4 h-4" />
-                        </Button>
+                        <Link to="/dashboard">
+                            <Button size="lg">
+                                Dashboard
+                                <ArrowRight className="w-4 h-4" />
+                            </Button>
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -131,10 +133,12 @@ const Navbar = () => {
                     ))}
                 </nav>
                 <div className="pt-2 border-t border-border">
-                    <Button>
-                        Dashboard
-                        <ArrowRight className="w-4 h-4" />
-                    </Button>
+                    <Link to="/dashboard" onClick={() => setIsOpen(false)} className="w-full block">
+                        <Button className="w-full">
+                            Dashboard
+                            <ArrowRight className="w-4 h-4" />
+                        </Button>
+                    </Link>
                 </div>
             </Collapse>
         </header>
